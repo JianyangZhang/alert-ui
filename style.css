@@ -103,3 +103,8 @@ body {
     background: rgb(255, 219, 77) !important;
     color: black !important;
 }
+
+#alert td.online {
+    background: rgb(231,231,231) !important;
+    color: black !important;
+}
