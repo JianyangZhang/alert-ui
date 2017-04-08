@@ -8,13 +8,13 @@
 		<link href="./style.css" rel="stylesheet" type="text/css" />
 	</head>
 
-	<body style="margin-top:25px; font-size:0.8vw">
+	<body id="alert">
 		<div class="ui two column divided grid container">
 			<div class="column">
-				<table class="ui celled table" style="border-radius:0px">
+				<table class="ui celled table edgy">
 					<thead class="center aligned">
 						<tr>
-							<th colspan="12" style="background-color:#E0E1E2; border-radius:0px">硬件告警</th>
+							<th class="edgy dark-gray-bg" colspan="12">硬件告警</th>
 						</tr>
 						<tr>
 							<th colspan="6">脱网告警</th>
@@ -23,31 +23,31 @@
 					</thead>
 					<tbody class="center aligned">
 						<tr>
-							<td style="border-right:0px" class="positive">
+							<td class="positive no-right-border">
 								<i class="icon checkmark"></i>在线:</td>
-							<td style="border-left:0px" class="positive">95</td>
-							<td style="border-right:0px" class="negative">
+							<td class="positive no-left-border">95</td>
+							<td class="negative no-right-border">
 								<i class="icon close"></i>离线:</td>
-							<td style="border-left:0px" class="negative">3</td>
-							<td style="border-right:0px" class="positive">恢复:</td>
-							<td style="border-left:0px" class="positive">10</td>
-							<td style="border-right:0px" class="error">
+							<td class="negative no-left-border">3</td>
+							<td class="positive no-right-border">恢复:</td>
+							<td class="positive no-left-border">10</td>
+							<td class="error no-right-border">
 								<i class="attention icon"></i>严重:</td>
-							<td style="border-left:0px" class="error">6</td>
-							<td style="border-right:0px" class="warning">
+							<td class="error no-left-border">6</td>
+							<td class="warning no-right-border">
 								<i class="attention icon"></i>普通:</td>
-							<td style="border-left:0px" class="warning">32</td>
-							<td style="border-right:0px" class="positive">恢复:</td>
-							<td style="border-left:0px" class="positive">12</td>
+							<td class="warning no-left-border">32</td>
+							<td class="positive no-right-border">恢复:</td>
+							<td class="positive no-left-border">12</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div class="column">
-				<table class="ui celled table" style="border-radius:0px">
+				<table class="ui celled table edgy">
 					<thead class="center aligned">
 						<tr>
-							<th colspan="12" style="background-color:#E0E1E2; border-radius:0px">应用告警</th>
+							<th class="edgy dark-gray-bg" colspan="12">应用告警</th>
 						</tr>
 						<tr>
 							<th colspan="6">脱网告警</th>
@@ -56,124 +56,173 @@
 					</thead>
 					<tbody class="center aligned">
 						<tr>
-							<td style="border-right:0px" class="positive">
+							<td class="positive no-right-border">
 								<i class="icon checkmark"></i>在线:</td>
-							<td style="border-left:0px" class="positive">95</td>
-							<td style="border-right:0px" class="negative">
+							<td class="positive no-left-border">95</td>
+							<td class="negative no-right-border">
 								<i class="icon close"></i>离线:</td>
-							<td style="border-left:0px" class="negative">3</td>
-							<td style="border-right:0px" class="positive">恢复:</td>
-							<td style="border-left:0px" class="positive">10</td>
-							<td style="border-right:0px" class="negative">
+							<td class="negative no-left-border">3</td>
+							<td class="positive no-right-border">恢复:</td>
+							<td class="positive no-left-border">10</td>
+							<td class="negative no-right-border">
 								<i class="attention icon"></i>严重:</td>
-							<td style="border-left:0px" class="negative">6</td>
-							<td style="border-right:0px" class="warning">
+							<td class="negative no-left-border">6</td>
+							<td class="warning no-right-border">
 								<i class="attention icon"></i>普通:</td>
-							<td style="border-left:0px" class="warning">32</td>
-							<td style="border-right:0px" class="positive">恢复:</td>
-							<td style="border-left:0px" class="positive">12</td>
+							<td class="warning no-left-border">32</td>
+							<td class="positive no-right-border">恢复:</td>
+							<td class="positive no-left-border">12</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 		</div>
 		<div class="ui one column grid container">
-			<div class="ui column search" style="text-align:right; padding-top:0; padding-bottom:0">
+			<div id="search-row" class="ui column search">
 				<div class="ui icon input">
-					<input class="prompt" type="text" placeholder="Search Alert" style="border-radius:0px">
+					<input class="prompt edgy" type="text" placeholder="Search Alert">
 					<i class="search icon"></i>
 				</div>
 			</div>
 		</div>
 		<div class="ui one column grid container">
 			<div class="column">
-				<table class="ui sortable selectable celled table" style="border-radius:0px">
+				<table class="ui sortable selectable celled table edgy">
 					<thead class="center aligned">
 						<tr>
-							<th style="background-color:#E0E1E2; border-radius:0px">资源名</th>
-							<th style="background-color:#E0E1E2; border-radius:0px">资源类型</th>
-							<th style="background-color:#E0E1E2; border-radius:0px">告警级别</th>
-							<th class="default-sort" style="background-color:#E0E1E2; border-radius:0px">告警时间</th>
-							<th class="six wide no-sort" style="background-color:#E0E1E2; border-radius:0px">告警内容</th>
+							<th class="edgy dark-gray-bg">资源名</th>
+							<th class="edgy dark-gray-bg">资源类型</th>
+							<th class="edgy dark-gray-bg">告警级别</th>
+							<th class="edgy default-sort dark-gray-bg">告警时间</th>
+							<th class="edgy six wide no-sort dark-gray-bg">告警内容</th>
 						</tr>
 					</thead>
 					<tbody class="center aligned">
-						<tr>
+						<tr class="warning">
 							<td>硬件1</td>
 							<td>硬件</td>
-							<td class="warning">普通</td>
+							<td>普通</td>
 							<td>2017-4-5</td>
 							<td class="left aligned">硬件1的告警内容</td>
 						</tr>
-						<tr>
+						<tr class="warning">
 							<td>软件1</td>
 							<td>软件</td>
-							<td class="warning">普通</td>
+							<td>普通</td>
 							<td>2017-4-8</td>
 							<td class="left aligned">软件1的告警内容</td>
 						</tr>
-						<tr>
+						<tr class="warning">
 							<td>硬件2</td>
 							<td>硬件</td>
-							<td class="warning">普通</td>
+							<td>普通</td>
 							<td>2017-4-6</td>
 							<td class="left aligned">硬件2的告警内容</td>
 						</tr>
-						<tr>
+						<tr class="negative">
 							<td>硬件3</td>
 							<td>硬件</td>
-							<td class="negative">严重</td>
+							<td>严重</td>
 							<td>2017-4-1</td>
 							<td class="left aligned">硬件3的告警内容</td>
 						</tr>
-						<tr>
+						<tr class="warning">
 							<td>软件2</td>
 							<td>软件</td>
-							<td class="warning">普通</td>
+							<td>普通</td>
 							<td>2017-4-7</td>
 							<td class="left aligned">软件2的告警内容</td>
 						</tr>
-						<tr>
+						<tr class="negative">
 							<td>硬件4</td>
 							<td>硬件</td>
-							<td class="negative">严重</td>
+							<td>严重</td>
 							<td>2017-4-3</td>
 							<td class="left aligned">硬件4的告警内容</td>
 						</tr>
-						<tr>
+						<tr class="warning">
 							<td>硬件5</td>
 							<td>硬件</td>
-							<td class="warning">普通</td>
+							<td>普通</td>
 							<td>2017-4-8</td>
 							<td class="left aligned">硬件5的告警内容</td>
 						</tr>
-						<tr>
+						<tr class="positive">
 							<td>软件3</td>
 							<td>软件</td>
-							<td class="negative">严重</td>
+							<td>恢复</td>
 							<td>2017-4-2</td>
 							<td class="left aligned">软件3的告警内容</td>
 						</tr>
-						<tr>
+						<tr class="negative">
 							<td>软件4</td>
 							<td>软件</td>
-							<td class="negative">严重</td>
+							<td>严重</td>
 							<td>2017-4-4</td>
 							<td class="left aligned">软件4的告警内容</td>
 						</tr>
-						<tr>
+						<tr class="warning">
 							<td>硬件6</td>
 							<td>硬件</td>
-							<td class="warning">普通</td>
+							<td>普通</td>
 							<td>2017-4-3</td>
 							<td class="left aligned">硬件6的告警内容</td>
+						</tr>
+						<tr class="warning">
+							<td>硬件7</td>
+							<td>硬件</td>
+							<td>普通</td>
+							<td>2017-4-3</td>
+							<td class="left aligned">硬件7的告警内容</td>
+						</tr>
+						<tr class="positive">
+							<td>硬件8</td>
+							<td>硬件</td>
+							<td>恢复</td>
+							<td>2017-4-5</td>
+							<td class="left aligned">硬件8的告警内容</td>
+						</tr>
+						<tr class="negative">
+							<td>硬件9</td>
+							<td>硬件</td>
+							<td>严重</td>
+							<td>2017-4-2</td>
+							<td class="left aligned">硬件9的告警内容</td>
+						</tr>
+						<tr class="negative">
+							<td>软件5</td>
+							<td>软件</td>
+							<td>严重</td>
+							<td>2017-4-1</td>
+							<td class="left aligned">软件5的告警内容</td>
+						</tr>
+						<tr class="negative">
+							<td>软件6</td>
+							<td>软件</td>
+							<td>严重</td>
+							<td>2017-4-6</td>
+							<td class="left aligned">软件6的告警内容</td>
+						</tr>
+						<tr class="negative">
+							<td>软件7</td>
+							<td>软件</td>
+							<td>严重</td>
+							<td>2017-4-6</td>
+							<td class="left aligned">软件7的告警内容</td>
+						</tr>
+						<tr class="warning">
+							<td>软件8</td>
+							<td>软件</td>
+							<td>普通</td>
+							<td>2017-4-4</td>
+							<td class="left aligned">软件8的告警内容</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 		</div>
-		<div class="ui container" style="text-align:center; margin-top:10px">
-			<div class="ui pagination menu" style="font-size:0.8vw; border-radius:0px">
+		<div id="page-row" class="ui container">
+			<div class="ui pagination menu edgy">
 				<a class="item">
 					首页
 				</a>
@@ -201,6 +250,7 @@
 				$('table').tablesort();
 				$('table.sortable').tablesort().data('tablesort').sort($("th.default-sort"));
 			});
+
 		</script>
 	</body>
 

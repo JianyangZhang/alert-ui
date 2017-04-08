@@ -1,0 +1,37 @@
+body {
+	font-family: Microsoft YaHei, Arial, sans-serif;
+	margin-top: 25px;
+	font-size: 10px;
+    line-height: 10px;
+}
+
+#alert .edgy {
+	border-radius: 0px;
+}
+
+#alert .dark-gray-bg {
+	background-color: #E0E1E2;
+}
+
+#alert .no-right-border {
+	border-right: 0px;
+}
+
+#alert .no-left-border {
+	border-left: 0px;
+}
+
+#search-row {
+	text-align: right;
+	padding-top: 0;
+	padding-bottom: 0
+}
+
+#page-row {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.pagination.menu {
+    font-size: 10px;
+}
