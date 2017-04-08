@@ -78,15 +78,23 @@
 			</div>
 		</div>
 		<div class="ui one column grid container">
+			<div class="ui column search" style="text-align:right; padding-top:0; padding-bottom:0">
+				<div class="ui icon input">
+					<input class="prompt" type="text" placeholder="Search Alert" style="border-radius:0px">
+					<i class="search icon"></i>
+				</div>
+			</div>
+		</div>
+		<div class="ui one column grid container">
 			<div class="column">
-				<table class="ui selectable celled table" style="border-radius:0px">
+				<table class="ui sortable selectable celled table" style="border-radius:0px">
 					<thead class="center aligned">
 						<tr>
 							<th style="background-color:#E0E1E2; border-radius:0px">资源名</th>
 							<th style="background-color:#E0E1E2; border-radius:0px">资源类型</th>
 							<th style="background-color:#E0E1E2; border-radius:0px">告警级别</th>
-							<th style="background-color:#E0E1E2; border-radius:0px">告警时间</th>
-							<th style="background-color:#E0E1E2; border-radius:0px; width: 35%">告警内容</th>
+							<th class="default-sort" style="background-color:#E0E1E2; border-radius:0px">告警时间</th>
+							<th class="six wide no-sort" style="background-color:#E0E1E2; border-radius:0px">告警内容</th>
 						</tr>
 					</thead>
 					<tbody class="center aligned">
@@ -94,28 +102,28 @@
 							<td>硬件1</td>
 							<td>硬件</td>
 							<td class="warning">普通</td>
-							<td>2017-4-7</td>
+							<td>2017-4-5</td>
 							<td class="left aligned">硬件1的告警内容</td>
 						</tr>
 						<tr>
 							<td>软件1</td>
 							<td>软件</td>
 							<td class="warning">普通</td>
-							<td>2017-4-7</td>
+							<td>2017-4-8</td>
 							<td class="left aligned">软件1的告警内容</td>
 						</tr>
 						<tr>
 							<td>硬件2</td>
 							<td>硬件</td>
 							<td class="warning">普通</td>
-							<td>2017-4-7</td>
+							<td>2017-4-6</td>
 							<td class="left aligned">硬件2的告警内容</td>
 						</tr>
 						<tr>
 							<td>硬件3</td>
 							<td>硬件</td>
 							<td class="negative">严重</td>
-							<td>2017-4-7</td>
+							<td>2017-4-1</td>
 							<td class="left aligned">硬件3的告警内容</td>
 						</tr>
 						<tr>
@@ -129,69 +137,71 @@
 							<td>硬件4</td>
 							<td>硬件</td>
 							<td class="negative">严重</td>
-							<td>2017-4-7</td>
+							<td>2017-4-3</td>
 							<td class="left aligned">硬件4的告警内容</td>
 						</tr>
 						<tr>
 							<td>硬件5</td>
 							<td>硬件</td>
 							<td class="warning">普通</td>
-							<td>2017-4-7</td>
+							<td>2017-4-8</td>
 							<td class="left aligned">硬件5的告警内容</td>
 						</tr>
 						<tr>
 							<td>软件3</td>
 							<td>软件</td>
 							<td class="negative">严重</td>
-							<td>2017-4-7</td>
+							<td>2017-4-2</td>
 							<td class="left aligned">软件3的告警内容</td>
 						</tr>
 						<tr>
 							<td>软件4</td>
 							<td>软件</td>
 							<td class="negative">严重</td>
-							<td>2017-4-7</td>
+							<td>2017-4-4</td>
 							<td class="left aligned">软件4的告警内容</td>
 						</tr>
 						<tr>
 							<td>硬件6</td>
 							<td>硬件</td>
 							<td class="warning">普通</td>
-							<td>2017-4-7</td>
+							<td>2017-4-3</td>
 							<td class="left aligned">硬件6的告警内容</td>
 						</tr>
 					</tbody>
-					<tfoot class="center aligned">
-						<tr>
-							<th colspan="5" style="padding:0.4em 0.2em">
-								<div class="ui pagination menu" style="font-size:0.8vw; border-radius:0px">
-									<a class="item">
-										首页
-									</a>
-									<a class="icon item">
-										<i class="left chevron icon"></i>
-									</a>
-									<a class="item">1</a>
-									<a class="item">2</a>
-									<a class="item">3</a>
-									<a class="item">4</a>
-									<a class="item">5</a>
-									<a class="icon item">
-										<i class="right chevron icon"></i>
-									</a>
-									<a class="item">
-										尾页
-									</a>
-								</div>
-							</th>
-						</tr>
-					</tfoot>
 				</table>
 			</div>
-			<script src="./semantic/dist/semantic.js">
-
-
-			</script>
+		</div>
+		<div class="ui container" style="text-align:center; margin-top:10px">
+			<div class="ui pagination menu" style="font-size:0.8vw; border-radius:0px">
+				<a class="item">
+					首页
+				</a>
+				<a class="icon item">
+					<i class="left chevron icon"></i>
+				</a>
+				<a class="item">1</a>
+				<a class="item">2</a>
+				<a class="item">3</a>
+				<a class="item">4</a>
+				<a class="item">5</a>
+				<a class="icon item">
+					<i class="right chevron icon"></i>
+				</a>
+				<a class="item">
+					尾页
+				</a>
+			</div>
+		</div>
+		<script src="./jquery.min.js"></script>
+		<script src="./semantic/dist/semantic.js"></script>
+		<script src="./tablesort.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('table').tablesort();
+				$('table.sortable').tablesort().data('tablesort').sort($("th.default-sort"));
+			});
+		</script>
 	</body>
 
 </html>
