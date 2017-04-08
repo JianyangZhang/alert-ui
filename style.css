@@ -9,8 +9,16 @@ body {
 	border-radius: 0px;
 }
 
+#alert th, #alert td {
+    border-color: white;
+}
+
 #alert .dark-gray-bg {
-	background-color: #E0E1E2;
+	background-color: #C6C6C6;
+}
+
+#alert .gray-bg {
+	background-color: #E7E7E7;
 }
 
 #alert .no-right-border {
@@ -34,4 +42,64 @@ body {
 
 .pagination.menu {
     font-size: 10px;
+}
+
+#alert .negative td {
+    background: rgb(253,213,205);
+    color: black;
+}
+
+#alert .negative .indicator {
+    background: rgb(255,51,6);
+    color: black;
+}
+
+#alert .negative:hover td {
+    background: rgb(255,51,6);
+    color: black;
+}
+
+#alert .positive td {
+    background: rgb(231,231,231);
+    color: black;
+}
+
+#alert .positive .indicator {
+    background: rgb(0,203,68);
+    color: black;
+}
+
+#alert .positive:hover td {
+    background: rgb(0,203,68);
+    color: black;
+}
+
+#alert .warning td {
+    background: rgb(255, 235, 153);
+    color: black;
+}
+
+#alert .warning .indicator {
+    background: rgb(255, 219, 77);
+    color: black;
+}
+
+#alert .warning:hover td {
+    background: rgb(255, 219, 77);
+    color: black;
+}
+
+#alert td.positive {
+    background: rgb(0,203,68) !important;
+    color: black !important;
+}
+
+#alert td.negative {
+    background: rgb(255,51,6) !important;
+    color: black !important;
+}
+
+#alert td.warning {
+    background: rgb(255, 219, 77) !important;
+    color: black !important;
 }
